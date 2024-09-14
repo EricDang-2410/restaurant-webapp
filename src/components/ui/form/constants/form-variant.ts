@@ -1,0 +1,4 @@
+export const FORM_VARIANT_TYPE = {
+  TEXT: "TEXT",
+  PASSWORD: "PASSWORD",
+}
