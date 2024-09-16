@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label"
 import { useForm } from "react-hook-form"
 
 interface AdminLoginProps {}
-const AdminLogin = (props: AdminLoginProps) => {
+const AdminLogin = ({}: AdminLoginProps) => {
   const methods = useForm({})
   return (
     <Form {...methods}>
