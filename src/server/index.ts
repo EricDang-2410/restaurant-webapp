@@ -1,8 +1,12 @@
+import { Restaurant } from "@prisma/client"
 import { publicProcedure, router } from "./trpc"
+import { prisma } from "@/lib/prisma"
 
 export const appRouter = router({
   getRestaurants: publicProcedure.query(async () => {
-    return ["hahahaha", "hahaa", "gfgb"]
+    const restauants: Restaurant[] = await prisma.restaurant.findMany()
+
+    return restauants
   }),
 })
 
