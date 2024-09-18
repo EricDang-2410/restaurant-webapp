@@ -9,17 +9,6 @@
 <br/>
 <br/>
 
-## Table of contents
-
->
-
-- [Table of contents](#table-of-contents)
-- [Introduction](#introduction)
-- [Installation](#installation)
-  - [Requirements](#requirements)
-  - [From `npm` (Node/Bun)](#from-npm-nodebun)
-  - [From `deno.land/x` (Deno)](#from-denolandx-deno)
-
 ## Introduction
 
 My web application is built using Next.js version `14.0.4`, a powerful and versatile framework that simplifies the development process with its many features and benefits. On the backend, we utilize tRPC for seamless API communication, and Prisma as my ORM and database management tool, ensuring efficient and structured handling of data
