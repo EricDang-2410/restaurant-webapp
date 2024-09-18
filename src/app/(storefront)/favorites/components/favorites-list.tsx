@@ -2,11 +2,11 @@ import CardRestaurant from "@/components/card/card-restaurant"
 import { LoaderIcon } from "lucide-react"
 import React from "react"
 
-interface RestaurantListProps {
+interface FavoritesListProps {
   data: any
 }
 
-const RestaurantList = ({ data }: RestaurantListProps) => {
+const FavoritesList = ({ data }: FavoritesListProps) => {
   return (
     <>
       {!data && (
@@ -36,4 +36,4 @@ const RestaurantList = ({ data }: RestaurantListProps) => {
   )
 }
 
-export default RestaurantList
+export default FavoritesList

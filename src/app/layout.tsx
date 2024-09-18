@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Provider } from "@/lib/fetcher-core/provider"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Toaster } from "react-hot-toast"
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"] })
 
@@ -22,7 +23,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange
         >
-          <Provider>{children}</Provider>
+          <Provider>
+            <>
+              {children}
+              <Toaster />
+            </>
+          </Provider>
         </ThemeProvider>
       </body>
     </html>

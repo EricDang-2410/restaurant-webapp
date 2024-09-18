@@ -7,7 +7,6 @@ import { trpc } from "./client"
 
 export function Provider({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient())
-  console.log("process.env.BACKEND_URL", process.env.BACKEND_URL)
   const [trpcClient] = useState(() =>
     trpc.createClient({
       links: [

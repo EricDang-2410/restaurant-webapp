@@ -9,14 +9,17 @@ interface CardRestaurantProps {
   city: string
   description: string
   rating: number
+  id: string
   ratingCount: number
   featureText: string
   category: string
   priceRange: string
+  isFavorite: boolean
 }
 const CardRestaurant = ({
   imageUrl,
   name,
+  id,
   city,
   rating,
   ratingCount,
@@ -24,10 +27,11 @@ const CardRestaurant = ({
   description,
   category,
   priceRange,
+  isFavorite,
 }: CardRestaurantProps) => {
   return (
     <div className="h-full w-full">
-      <CardImage images={imageUrl} />
+      <CardImage images={imageUrl} isFavorite={isFavorite} id={id} />
       <div className="py-3">
         <CardFeature name={featureText} city={city} />
         <CardTitle title={name} rating={rating} ratingCount={ratingCount} />
