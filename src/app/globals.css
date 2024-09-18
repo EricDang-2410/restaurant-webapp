@@ -74,3 +74,6 @@
     @apply bg-background text-foreground;
   }
 }
+.menu_active > .underline_menu {
+  opacity: 1;
+}

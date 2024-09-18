@@ -3,6 +3,7 @@ import HeaderSocial from "./components/header-social"
 import clsx from "clsx"
 import { Separator } from "@/components/ui/separator"
 import HeaderPhone from "./components/header-phone"
+import HeaderMenu from "./components/header-menu"
 
 export interface HeaderProps {}
 
@@ -19,6 +20,7 @@ const Header = ({}: HeaderProps) => {
         </div>
       </div>
       <Separator className="mt-3 max-w-[80%]" />
+      <HeaderMenu />
     </div>
   )
 }

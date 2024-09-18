@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
+import HomeBanner from "./(home)/components/home-banner"
 
 export default function Home() {
   return (
-    <main className="flex h-screen w-full items-center justify-center p-24">
-      <Button>~content~</Button>
+    <main className="flex h-screen w-full items-center justify-center py-24">
+      <HomeBanner image="/images/main_introduce.jpg" />
     </main>
   )
 }

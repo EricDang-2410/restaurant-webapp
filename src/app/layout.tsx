@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Provider } from "@/lib/fetcher-core/provider"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"] })
 
@@ -20,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Provider>{children}</Provider>
         </ThemeProvider>
       </body>
     </html>
